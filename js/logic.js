@@ -37,7 +37,7 @@ function loadQuestion() {
 }
 
 function startTimer() {
-  timerSeconds = 15;
+  timerSeconds = 20;
   document.getElementById("timer").innerText = timerSeconds;
   clearInterval(timer);
   timer = setInterval(() => {
@@ -139,5 +139,6 @@ function loadQuestion() {
 
   startTimer();
 }
+
 
 
