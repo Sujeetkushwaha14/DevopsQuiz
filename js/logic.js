@@ -3,7 +3,7 @@ let score = 0;
 let timer;
 let timerSeconds = 20;
 let questions = [];
-
+ 
 // Called after loading questions dynamically
 function initQuiz() {
   current = 0;
@@ -139,4 +139,5 @@ function loadQuestion() {
 
   startTimer();
 }
+
 
