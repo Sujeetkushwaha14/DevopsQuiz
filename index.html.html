@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevOps Quiz Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 DevOps Quiz Portal</h1>
+
+    <div id="selector" class="card">
+      <h3>Select a Quiz</h3>
+      <button onclick="startQuiz('docker')">Docker</button>
+      <button onclick="startQuiz('kubernetes')">Kubernetes</button>
+      <button onclick="startQuiz('terraform')">Terraform</button>
+      <button onclick="startQuiz('azure')">Azure</button>
+      <button onclick="startQuiz('cicd')">CI/CD</button>
+      <button onclick="startQuiz('linux')">Linux</button>
+      <button onclick="startQuiz('bash')">Bash</button>
+      <button onclick="startQuiz('trivy')">Trivy</button>
+      <button onclick="startQuiz('sonarqube')">SonarQube</button>
+      <button onclick="startQuiz('prometheus')">Prometheus + Grafana</button>
+    </div>
+
+    
+    <div id="quiz-box" class="card hidden">
+      <div class="info">
+        <p><strong>Time Left:</strong> <span id="timer">15</span> seconds</p>
+        <p><strong>Question:</strong> <span id="questionCounter">1</span>/10</p>
+      </div>
+
+      <p id="questionText"></p>
+      <div id="optionsContainer"></div>
+    </div>
+
+    <div id="resultBox" class="hidden card"></div>
+  </div>
+
+  <script src="js/logic.js"></script>
+  <script>
+    function startQuiz(tool) {
+      const script = document.createElement('script');
+      script.src = `js/questions_${tool}.js`;
+      document.body.appendChild(script);
+      document.getElementById('selector').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
