@@ -1,14 +1,14 @@
 questions = [
-  { q: "Terraform kya hai?", options: ["CI tool", "IaC tool", "Monitoring tool", "Debugger"], answer: 1 },
-  { q: "Terraform me .tf file kis purpose se hoti hai?", options: ["Docker run karne ke liye", "Infra define karne ke liye", "CI/CD banane ke liye", "Log analysis"], answer: 1 },
-  { q: "Terraform init command ka use kya hai?", options: ["Resource delete karta hai", "State file banata hai", "Working dir ko initialize karta hai", "Backup karta hai"], answer: 2 },
-  { q: "Terraform plan ka output kya hota hai?", options: ["YAML config", "Resource diff preview", "Logs", "Dockerfile"], answer: 1 },
-  { q: "Terraform apply kya karta hai?", options: ["Code run karta hai", "Changes preview deta hai", "Infra provision karta hai", "Nothing"], answer: 2 },
-  { q: "Terraform state file kis format me hoti hai?", options: ["YAML", "XML", "JSON", "INI"], answer: 2 },
-  { q: "Terraform backend kisliye use hota hai?", options: ["Logs store karne", "Module reuse", "Remote state manage karne", "Bucket clean karne"], answer: 2 },
-  { q: "Variable define karne ke liye kaunsa keyword use hota hai?", options: ["define", "var", "variable", "input"], answer: 2 },
-  { q: "Terraform module ka use?", options: ["Resource ko loop karne", "Infra ko modular aur reusable banane", "Logs create karne", "Git ignore karne"], answer: 1 },
-  { q: "Terraform me sensitive variable ko secure karne ka best tarika?", options: ["Hardcode karna", "Environment variable ya secrets engine", "TF_LOG me rakhna", "GitHub me push karna"], answer: 1 }
+  { q: "What is Terraform?", options: ["CI tool", "IaC tool", "Monitoring tool", "Debugger"], answer: 1 },
+  { q: "What is the purpose of a .tf file in Terraform?", options: ["To run Docker", "To define infrastructure", "To build CI/CD", "For log analysis"], answer: 1 },
+  { q: "What is the use of 'terraform init' command?", options: ["Deletes resources", "Creates state file", "Initializes the working directory", "Creates backup"], answer: 2 },
+  { q: "What does 'terraform plan' output?", options: ["YAML config", "Preview of resource changes", "Logs", "Dockerfile"], answer: 1 },
+  { q: "What does 'terraform apply' do?", options: ["Runs code", "Shows preview of changes", "Provisions infrastructure", "Nothing"], answer: 2 },
+  { q: "In which format is Terraform state file?", options: ["YAML", "XML", "JSON", "INI"], answer: 2 },
+  { q: "What is the purpose of Terraform backend?", options: ["Store logs", "Reuse modules", "Manage remote state", "Clean bucket"], answer: 2 },
+  { q: "Which keyword is used to define variables in Terraform?", options: ["define", "var", "variable", "input"], answer: 2 },
+  { q: "What is the use of Terraform modules?", options: ["Loop resources", "Make infrastructure modular and reusable", "Create logs", "Ignore in Git"], answer: 1 },
+  { q: "What is the best way to secure sensitive variables in Terraform?", options: ["Hardcode them", "Use environment variables or secrets engine", "Keep in TF_LOG", "Push to GitHub"], answer: 1 }
 ];
 
 initQuiz();
