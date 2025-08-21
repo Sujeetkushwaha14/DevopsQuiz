@@ -1,14 +1,14 @@
 questions = [
-  { q: "Trivy kya karta hai?", options: ["Monitoring", "Vulnerability scanning tool", "CI pipeline manager", "Docker runtime"], answer: 1 },
-  { q: "Trivy kaunse resource scan kar sakta hai?", options: ["Sirf images", "Only source code", "Images, Filesystem, Git repos, K8s", "Logs only"], answer: 2 },
-  { q: "Trivy CLI install karne ke liye kaunsa package use hota hai (Linux)?", options: ["brew", "snap", "apt", "npm"], answer: 2 },
-  { q: "Trivy me default scan kis ke liye hoti hai?", options: ["Kubernetes Pod", "Container image", "EC2", "Vault secrets"], answer: 1 },
-  { q: "Trivy scan result me kya output hota hai?", options: ["Build logs", "System performance", "Vulnerability list with severity", "None"], answer: 2 },
-  { q: "Trivy me severity level ka use kya hai?", options: ["Image name dikhane ke liye", "Test case likhne", "Filter vulnerabilities by impact", "Cloud billing"], answer: 2 },
-  { q: "Trivy config files ko scan karne ke liye kya use hota hai?", options: ["trivy conf", "trivy fs", "trivy config", "trivy rule"], answer: 2 },
-  { q: "Trivy GitHub repo scan kar sakta hai?", options: ["Nahi", "Haan, --repo flag se", "Sirf public repos", "Sirf forks"], answer: 1 },
-  { q: "Trivy output format kaise change karte hain?", options: ["--type", "--level", "--format", "--report"], answer: 2 },
-  { q: "Trivy me ignore file ka kya role hai?", options: ["Scanning skip karne ke liye specific IDs", "Performance improve", "RAM save", "Log beautify"], answer: 0 }
+  { q: "What does Trivy do?", options: ["Monitoring", "Vulnerability scanning tool", "CI pipeline manager", "Docker runtime"], answer: 1 },
+  { q: "Which resources can Trivy scan?", options: ["Only images", "Only source code", "Images, filesystem, Git repos, Kubernetes", "Logs only"], answer: 2 },
+  { q: "Which package is used to install Trivy CLI on Linux?", options: ["brew", "snap", "apt", "npm"], answer: 2 },
+  { q: "By default, what does Trivy scan?", options: ["Kubernetes Pod", "Container image", "EC2", "Vault secrets"], answer: 1 },
+  { q: "What is the output of a Trivy scan?", options: ["Build logs", "System performance", "List of vulnerabilities with severity", "None"], answer: 2 },
+  { q: "What is the purpose of severity levels in Trivy?", options: ["To show image name", "Writing test cases", "Filter vulnerabilities by impact", "Cloud billing"], answer: 2 },
+  { q: "Which command is used to scan configuration files in Trivy?", options: ["trivy conf", "trivy fs", "trivy config", "trivy rule"], answer: 2 },
+  { q: "Can Trivy scan a GitHub repository?", options: ["No", "Yes, using --repo flag", "Only public repos", "Only forks"], answer: 1 },
+  { q: "How do you change the output format in Trivy?", options: ["--type", "--level", "--format", "--report"], answer: 2 },
+  { q: "What is the role of an ignore file in Trivy?", options: ["Skip scanning specific IDs", "Improve performance", "Save RAM", "Beautify logs"], answer: 0 }
 ];
 
 initQuiz();
