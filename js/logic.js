@@ -1,7 +1,7 @@
 let current = 0;
 let score = 0;
 let timer;
-let timerSeconds = 15;
+let timerSeconds = 20;
 let questions = [];
 
 // Called after loading questions dynamically
@@ -139,3 +139,4 @@ function loadQuestion() {
 
   startTimer();
 }
+
